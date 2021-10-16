@@ -8,9 +8,9 @@ This project is created to write an implementation of Sierpinki's carpet in C++ 
 
 To use the project you should install the following packages :
 
-*`CMake`
-*`OpenGL`
-*`GLUT`
+* `CMake`
+* `OpenGL`
+* `GLUT`
 
 ## Usage
 
