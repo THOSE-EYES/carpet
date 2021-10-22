@@ -1,6 +1,6 @@
 # Sierpinski's Carpet OpenGL Visualization
 
-This project is created to write an implementation of Sierpinki's carpet in C++ using OpenGL.
+This project is created to write an implementation of Sierpinki's carpet in C using OpenGL.
 
 ![Carpet](docs/images/carpet.png)
 
