@@ -20,6 +20,12 @@
 #ifndef GL_WINDOW
 #define GL_WINDOW
 
+// Make Windows happy
+#ifdef _WIN32
+	#include <Windows.h>
+#endif
+
+
 // Include C headers
 #include <stdint.h>
 

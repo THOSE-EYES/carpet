@@ -18,6 +18,8 @@ In this section you can read about how to build and use this project.
 
 ### Building process
 
+#### Linux
+
 To build the project execute the following commands :
 
 ```bash
@@ -26,10 +28,20 @@ cmake ..
 make
 ```
 
+#### Windows
+
+To build the project on Windows, just add CMake module to your MSVS and build the app.
+
 ## Running the app
+
+### Linux
 
 To run the app just execute the following command :
 
 ``` bash
 ./carpet
 ```
+
+### Windows
+
+You can launch the app from your MSVS.

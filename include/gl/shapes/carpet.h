@@ -20,6 +20,11 @@
 #ifndef GL_SHAPES_CARPET
 #define GL_SHAPES_CARPET
 
+// Make Windows happy
+#ifdef _WIN32
+	#include <Windows.h>
+#endif
+
 // Include C headers
 #include <stdbool.h>
 
@@ -39,14 +44,14 @@
  * This struct defines a carpet of different squares
  */
 typedef struct{
-	Rectangle* squares;
+	RectangleType* squares;
 	GLint size;
 } Carpet;
 
 /**
  * Draw the carpet on the given rectangle
  */
-void DrawCarpet(Rectangle carpet, GLint divisor, GLint steps);
+void DrawCarpet(RectangleType carpet, GLint divisor, GLint steps);
 
 /**
  * Check if the square should be skipped

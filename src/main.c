@@ -38,7 +38,7 @@
 
 void Redraw() {
 	// Create an are to draw the carpet
-	Rectangle carpet;
+	RectangleType carpet;
 	carpet.start_x = -CARPET_SIDE;
 	carpet.end_x = CARPET_SIDE;
 	carpet.start_y = -CARPET_SIDE;

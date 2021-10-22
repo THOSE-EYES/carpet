@@ -25,7 +25,7 @@ bool IsSquareSkipped(GLint row, GLint column, GLint divisor) {
 					(GLint) column == round(divisor / 2);
 }
 
-void DrawCarpet(Rectangle carpet, GLint divisor, GLint steps) {
+void DrawCarpet(RectangleType carpet, GLint divisor, GLint steps) {
 	// Exit the recursion if there are no steps left
 	if (steps == 0) return;
 
@@ -45,7 +45,7 @@ void DrawCarpet(Rectangle carpet, GLint divisor, GLint steps) {
 				getRandomFloat(0.0, CARPET_DISTORTION_MAX, CARPET_DISTORTION_PRECISION);
 
 			// Calculate the new square vertexes
-			Rectangle square = CreateRectangle(
+			RectangleType square = CreateRectangle(
 				carpet.start_x + column * horizontal_step + x_shift,
 				carpet.start_y + row * vertical_step + y_shift,
 				horizontal_step,

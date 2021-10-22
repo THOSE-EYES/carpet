@@ -20,6 +20,11 @@
 #ifndef GL_SHAPES_SQUARE
 #define GL_SHAPES_SQUARE
 
+// Make Windows happy
+#ifdef _WIN32
+	#include <Windows.h>
+#endif
+
 // Include OpenGL headers
 #include <GL/gl.h>
 
@@ -34,7 +39,7 @@ typedef struct {
 	GLfloat start_y;
 	GLfloat end_x;
 	GLfloat end_y;
-} Rectangle;
+} RectangleType;
 
 /**
  * Create a rectangle out of the given points
@@ -42,15 +47,15 @@ typedef struct {
  * @param y the Y position of the bottom left corner
  * @param width rectangle's width
  * @param height rectangle's heigh
- * @return a filed instance of the Rectangle structure
+ * @return a filed instance of the RectangleType structure
  */
-Rectangle CreateRectangle(GLfloat x, GLfloat y, GLfloat width, GLfloat height);
+RectangleType CreateRectangle(GLfloat x, GLfloat y, GLfloat width, GLfloat height);
 
 /**
  * Draw the given rectangle
  * @param rectangle the rectangle to draw
  * @param color the color of the rectangle
  */
-void DrawRectangle(Rectangle rectangle, ColorRGB color);
+void DrawRectangle(RectangleType rectangle, ColorRGB color);
 
 #endif // GL_SHAPES_SQUARE

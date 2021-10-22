@@ -20,8 +20,8 @@
 // Include project headers
 #include "gl/shapes/rectangle.h"
 
-Rectangle CreateRectangle(GLfloat x, GLfloat y, GLfloat width, GLfloat height) {
-    Rectangle square;
+RectangleType CreateRectangle(GLfloat x, GLfloat y, GLfloat width, GLfloat height) {
+    RectangleType square;
     square.start_x = x;
 	square.end_x = square.start_x + width;
 	square.start_y = y;
@@ -30,7 +30,7 @@ Rectangle CreateRectangle(GLfloat x, GLfloat y, GLfloat width, GLfloat height) {
     return square;
 }
 
-void DrawRectangle(Rectangle square, ColorRGB color) {
+void DrawRectangle(RectangleType square, ColorRGB color) {
     // Set color of drawing
     glColor3f(color.red, color.green, color.blue);
 

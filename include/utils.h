@@ -20,6 +20,11 @@
 #ifndef UTILS
 #define UTILS
 
+// Make Windows happy
+#ifdef _WIN32
+	#include <Windows.h>
+#endif
+
 // Include OpenGL headers
 #include <GL/gl.h>
 
